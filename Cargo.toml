@@ -1,0 +1,15 @@
+[package]
+name = "rustjitc"
+version = "0.1.0"
+authors = ["Hirochika Matsumoto <git@hkmatsumoto.com>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[package.metadata.rust-analyzer]
+rustc_private = true
+
+[dependencies]
+glob = "0.3.0"
+rustc_codegen_llvm = { path = "../rust/compiler/rustc_codegen_llvm"  }
+rustc_codegen_ssa = { path = "../rust/compiler/rustc_codegen_ssa" }
+rustc_llvm = { path = "../rust/compiler/rustc_llvm" }
